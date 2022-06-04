@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 
 :root {
   /* theme 1 */
@@ -32,8 +40,23 @@
   /* text */
   --text-2-gray:hsl(60, 10%, 19%);
   --text-2-white:hsl(0, 0, 100%);
-
 }
+
+body {
+  background-color: var(--background-main);
+  min-height: 100vh;
+  color: white;
+}
+
+.calculator {
+  margin: auto;
+  border: 4px solid white;
+  width: 294px;
+  height: 325px;
+  
+}
+
+
 
 .attribution {
   font-size: 11px; text-align: center;
