@@ -74,10 +74,29 @@ output {
   width: 100%;
   padding: 16px;
   background-color: var(--background-screen);
-  margin: 8px 0px;
-  border: 4px solid white;
   border-radius: 4px;
+}
 
+.slider {
+  border: none;
+  display:flex;
+}
+
+fieldset {
+  border: none;
+  background-color: var(--background-screen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+input {
+  background-color: var(--background-screen);
 }
 
 .keys {
@@ -101,7 +120,7 @@ output {
 }
 
 .half {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
 .blue {
