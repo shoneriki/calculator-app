@@ -46,6 +46,10 @@ body {
   background-color: var(--background-main);
   min-height: 100vh;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .calculator {
@@ -67,15 +71,15 @@ body {
 
 }
 
-.display {
 
+.display > input {
+  width: 100%;
 }
 
 .keys {
   display: grid;
   grid-gap: 4px;
   grid-template-columns: repeat(4, 1fr);
-  /* width: 100%; */
 }
 
 .key {
@@ -87,6 +91,8 @@ body {
 
 .attribution {
   font-size: 11px; text-align: center;
+  position: absolute;
+  bottom: 16px;
 }
 
 .attribution a {
