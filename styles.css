@@ -69,35 +69,52 @@ body {
   justify-content: space-between;
 }
 
-
-output {
-  width: 100%;
-  padding: 16px;
-  background-color: var(--background-screen);
-  border-radius: 4px;
+.text-calc {
+  display: flex;
+  align-items: center;
 }
 
-.slider {
-  border: none;
-  display:flex;
-}
 
 fieldset {
   border: none;
-  background-color: var(--background-screen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6px;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.rating-text p {
+  font-size: 6px;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+
+.rating-container {
+  display: flex;
+  padding-bottom: .4rem;
+  width: 100%;
+}
+
+.rating-container > label {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 label {
   display: flex;
   flex-direction: column-reverse;
 }
 
-input {
+/* output {
+  width: 100%;
+  padding: 16px;
   background-color: var(--background-screen);
-}
+  border-radius: 4px;
+} */
 
 .keys {
   display: inline-grid;
