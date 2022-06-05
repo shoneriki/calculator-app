@@ -112,12 +112,14 @@ label {
   background-color: var(--background-screen);
 }
 
-/* output {
+#display {
   width: 100%;
   padding: 16px;
+  border: none;
   background-color: var(--background-screen);
   border-radius: 4px;
-} */
+  margin-top: 16px;
+}
 
 .keys {
   display: grid;
@@ -126,7 +128,7 @@ label {
   background-color: var(--background-screen);
   border-radius: 8px;
   padding: 8px;
-  margin: 48px 0px;
+  margin: 16px 0px;
   height: 300px;
 }
 
@@ -135,7 +137,18 @@ label {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
+
+.operator {
+  text-transform: lowercase;
+}
+
+#delBtn {
+  text-transform: uppercase;
+}
+
+
 
 .half {
   grid-column: span 2;
@@ -148,9 +161,6 @@ label {
 .red {
   background-color: var(--key-toggle);
 }
-
-
-
 
 .attribution {
   font-size: 11px; text-align: center;
