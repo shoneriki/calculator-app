@@ -40,6 +40,16 @@
   /* text */
   --text-2-gray:hsl(60, 10%, 19%);
   --text-2-white:hsl(0, 0, 100%);
+
+  /* theme 3 */
+  /* background */
+  --background-3-main: hsl(268, 75%, 9%);
+  --background-3-else: hsl(268, 71%, 12%);
+  /* Text */
+  --text-yellow: hsl(52, 100%, 62%);
+  --text-dark-blue:hsl(198, 20%, 13%);
+  --text-white: hsl(0, 0, 100%);
+
 }
 
 .background {
@@ -55,13 +65,8 @@
 
 .calculator {
   margin: auto;
-  /* border: 4px solid white; */
   width: 294px;
   height: 325px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 
@@ -75,8 +80,22 @@
   align-items: center;
 }
 
+.one {
+  background-color: var(--background-main);
+}
 
-fieldset {
+.two {
+  background-color: var(--background-2-main);
+  color: black;
+}
+
+.three {
+  background-color: var(--background-3-main);
+  color:var(--text-yellow);
+}
+
+
+.theme {
   border: none;
   display: flex;
   justify-content: center;
@@ -148,8 +167,6 @@ label {
 #delBtn {
   text-transform: uppercase;
 }
-
-
 
 .half {
   grid-column: span 2;

@@ -7,17 +7,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Calculator app</title>
-
+  <script src="script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <div class="background">
-    <main class="calculator one">
+  <div class="background" id="background">
+    <main class="calculator">
       <div class="top">
         <div class="text-calc">
           <p>calc</p>
         </div>
-        <fieldset aria-labelledby="theme">
+        <form aria-labelledby="theme" class="theme">
           <div class="theme-text">
             <p>Theme</p>
           </div>
@@ -35,7 +35,7 @@
               3
             </label>
           </div>
-        </fieldset>
+        </form>
       </div>
       <div class="display">
         <input type="text" id="display">
@@ -67,8 +67,5 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
-
-
-  <script src="script.js"></script>
 </body>
 </html>
