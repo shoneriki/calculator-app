@@ -4,8 +4,66 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --font-family:'League Spartan', sans-serif;
 }
 
+.background[data-theme="one"] {
+  --t-bg: hsl(222, 26%, 31%);
+  --t-toggle-keypad-bg: hsl(223, 31%, 20%); ;
+  --t-screen-bg: hsl(224, 36%, 15%);
+  --t-delReset-key-bg: hsl(225, 21%, 49%);
+  --t-delReset-key-shadow: hsl(224, 28%, 35%);
+
+  --t-key-equals-orange: hsl(6, 63%, 50%);
+
+  --t-key-equals-shadow: hsl(6, 70%, 34%);
+
+  --t-key-white-background: hsl(30, 25%, 89%);
+  --t-key-white-shadow: hsl(28, 16%, 65%);
+
+  --t-text-blue: hsl(221, 14%, 31%);
+  --t-text-display: white;
+  --t-text-top: white;
+}
+
+
+.background[data-theme="two"]{
+  --t-bg: hsl(0, 0%, 90%);
+  --t-toggle-keypad-bg: hsl(0, 5%, 81%);
+  --t-screen-bg: hsl(0, 0%, 93%);
+  --t-delReset-key-bg: rgb(26, 161, 158);
+  --t-delReset-key-shadow:  hsl(35, 11%, 61%);
+
+  --t-key-equals-orange:hsl(25, 98%, 40%);
+
+  --t-key-equals-shadow: hsl(25, 99%, 27%);
+
+  --t-key-white-background: hsl(30, 25%, 89%);
+  --t-key-white-shadow: hsl(28, 16%, 65%);
+
+  --t-text-blue: hsl(60, 10%, 19%);
+  --t-text-display: hsl(60, 10%, 19%);
+  --t-text-top: hsl(60, 10%, 19%);
+}
+
+.background[data-theme="three"]{
+  --t-bg: hsl(268, 75%, 9%);
+  --t-toggle-keypad-bg: hsl(268, 71%, 12%);
+  --t-screen-bg: hsl(268, 71%, 12%);
+  --t-delReset-key-bg: hsl(268, 47%, 21%);
+  --t-delReset-key-shadow:hsl(290, 70%, 36%);
+
+  --t-key-equals-orange:hsl(176, 100%, 44%);
+
+  --t-key-equals-shadow: hsl(177, 92%, 70%);
+
+  --t-key-white-background: hsl(281, 89%, 26%);
+  --t-key-white-shadow: hsl(285, 91%, 52%);
+
+  --t-text-blue: hsl(52, 100%, 62%);
+  --t-text-display: hsl(52, 100%, 62%);
+  --t-text-top: white;
+}
 
 :root {
 
@@ -60,7 +118,7 @@ body {
 }
 
 .background {
-  background-color: var(--background-main);
+  background-color: var(--t-bg);
   min-height: 100vh;
   color: white;
   display: flex;
@@ -73,7 +131,7 @@ body {
 .calculator {
   margin: auto;
   width: 294px;
-  height: 400px;
+  height: 430px;
   overflow: hidden;
 }
 
@@ -180,21 +238,4 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-/* themes */
-.one {
-  background-color: var(--background-main);
-}
-
-/* theme 2 changes */
-
-.two {
-  background-color: var(--background-2-main);
-  color: black;
-}
-
-.three {
-  background-color: var(--background-3-main);
-  color:var(--text-yellow);
 }
