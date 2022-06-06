@@ -66,7 +66,8 @@
 .calculator {
   margin: auto;
   width: 294px;
-  height: 325px;
+  height: 400px;
+  overflow: hidden;
 }
 
 
@@ -141,15 +142,19 @@ label {
   margin-top: 16px;
 }
 
+#display .two {
+  background-color: #fff;
+}
+
 .keys {
   display: grid;
-  grid-gap: 4px;
+  grid-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
   background-color: var(--background-screen);
   border-radius: 8px;
-  padding: 8px;
+  padding: 16px;
   margin: 16px 0px;
-  height: 300px;
+  height: 284px;
 }
 
 .key {
@@ -158,6 +163,7 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
 }
 
 .operator {

@@ -1,7 +1,9 @@
-const theme1 = document.getElementById("theme-1")
-const theme2 = document.getElementById("theme-2");
-const theme3 = document.getElementById("theme-3")
 const background = document.getElementById("background");
+const theme1 = document.getElementById("theme-1");
+const theme2 = document.getElementById("theme-2");
+const theme3 = document.getElementById("theme-3");
+
+const display = document.getElementById("display");
 
 
 theme1.addEventListener("click", function() {
@@ -17,6 +19,11 @@ theme2.addEventListener("click", function() {
     background.classList.remove("one");
     background.classList.remove("three")
     background.classList.add("two");
+
+    // display.classList.remove("one");
+    // display.classList.remove("three");
+    display.classList.add("two");
+
   }
 })
 
