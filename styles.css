@@ -42,7 +42,7 @@
   --text-2-white:hsl(0, 0, 100%);
 }
 
-body {
+.background {
   background-color: var(--background-main);
   min-height: 100vh;
   color: white;
@@ -63,6 +63,7 @@ body {
   justify-content: center;
   align-items: center; */
 }
+
 
 .top {
   display: flex;
@@ -85,19 +86,19 @@ fieldset {
   letter-spacing: .05rem;
 }
 
-.rating-text p {
+.theme-text p {
   font-size: 6px;
   padding-right: 8px;
   padding-top: 4px;
 }
 
-.rating-container {
+.theme-container {
   display: flex;
   padding-bottom: .4rem;
   width: 100%;
 }
 
-.rating-container > label {
+.theme-container > label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +109,7 @@ label {
   flex-direction: column-reverse;
 }
 
-.rating-container > input {
+.theme-container > input {
   background-color: var(--background-screen);
 }
 

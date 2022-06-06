@@ -11,64 +11,63 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-
-  <main class="calculator one">
-    <section class="top">
-      <div class="text-calc">
-        <p>calc</p>
+  <div class="background">
+    <main class="calculator one">
+      <div class="top">
+        <div class="text-calc">
+          <p>calc</p>
+        </div>
+        <fieldset aria-labelledby="theme">
+          <div class="theme-text">
+            <p>Theme</p>
+          </div>
+          <div class="theme-container">
+            <label>
+              <input type='radio' name='theme' id="theme-1" />
+              1
+            </label>
+            <label>
+              <input type='radio' name='theme' id="theme-2" />
+              2
+            </label>
+            <label>
+              <input type='radio' name='theme'id="theme-3" />
+              3
+            </label>
+          </div>
+        </fieldset>
       </div>
-      <fieldset aria-labelledby="theme">
-        <div class="rating-text">
-          <p>Theme</p>
-        </div>
-        <div class="rating-container">
-          <label>
-            <input type='radio' name='theme' value='1' />
-            1
-          </label>
-          <label>
-            <input type='radio' name='theme' value='2' />
-            2
-          </label>
-          <label>
-            <input type='radio' name='theme' value='3' />
-            3
-          </label>
-        </div>
-      </fieldset>
-    </section>
-    <section class="display">
-      <input type="text" id="display">
-    </section>
-    <section class="keys">
-      <button value="7" class="key digits">7</button>
-      <button value="8" class="key digits">8</button>
-      <button value="9" class="key digits">9</button>
-      <button value="DEL" id="delBtn" class="key operator blue del">del</button>
-      <button value="4" class="key digits">4</button>
-      <button value="5" class="key digits">5</button>
-      <button value="6" class="key digits">6</button>
-      <button value="-" class="key operator">÷</button>
-      <button value="1" class="key digits">1</button>
-      <button value="2" class="key digits">2</button>
-      <button value="3" class="key digits">3</button>
-      <button value="-"class="key operator">-</button>
-      <button value="." id="clearBtn" class="key ">.</button>
-      <button value="0" class="key digits">0</button>
-      <button value="/" class="key operator">/</button>
-      <button value="x" class="key operator">x</button>
+      <div class="display">
+        <input type="text" id="display">
+      </div>
+      <div class="keys">
+        <button value="7" class="key digits">7</button>
+        <button value="8" class="key digits">8</button>
+        <button value="9" class="key digits">9</button>
+        <button value="DEL" id="delBtn" class="key operator blue del">del</button>
+        <button value="4" class="key digits">4</button>
+        <button value="5" class="key digits">5</button>
+        <button value="6" class="key digits">6</button>
+        <button value="-" class="key operator">÷</button>
+        <button value="1" class="key digits">1</button>
+        <button value="2" class="key digits">2</button>
+        <button value="3" class="key digits">3</button>
+        <button value="-"class="key operator">-</button>
+        <button value="." id="clearBtn" class="key ">.</button>
+        <button value="0" class="key digits">0</button>
+        <button value="/" class="key operator">/</button>
+        <button value="x" class="key operator">x</button>
 
-      <button value="RESET" id="resetBtn" class="key half blue reset">reset</button>
-      <button value="=" id="equalsBtn" class="key half red equals">=</button>
-    </section>
-  </main>
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+        <button value="RESET" id="resetBtn" class="key half blue reset">reset</button>
+        <button value="=" id="equalsBtn" class="key half red equals">=</button>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
+
 
   <script src="script.js"></script>
 </body>
