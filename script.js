@@ -5,6 +5,7 @@ const theme3 = document.getElementById("theme-3");
 
 const display = document.getElementById("display");
 
+const keys = document.querySelectorAll(".keys");
 
 theme1.addEventListener("click", function() {
   if ((theme1.checked)) {
@@ -37,3 +38,13 @@ theme3.addEventListener("click", function() {
     background.classList.add("three")
   }
 })
+
+function value() {
+  keys.forEach(key =>{
+    key.addEventListener("click", function() {
+      alert("clicked");
+    })
+  })
+}
+
+value();
