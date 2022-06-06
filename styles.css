@@ -16,9 +16,9 @@
   --background-screen: hsl(224, 36%, 15%);
   /* keys */
   --key-background: hsl(225, 21%, 49%);
-  --key-shadow:  hsl(224, 28%, 35%);
+  --key-shadow-blue:  hsl(224, 28%, 35%);
   --key-toggle: hsl(6, 63%, 50%);
-  --key-shadow: hsl(6, 70%, 34%);
+  --key-shadow-red: hsl(6, 70%, 34%);
   --key-background-orange: hsl(30, 25%, 89%);
   --key-shadow-orange: hsl(28, 16%, 65%);
   /* text */
@@ -95,7 +95,6 @@
   color:var(--text-yellow);
 }
 
-
 .theme {
   border: none;
   display: flex;
@@ -140,10 +139,11 @@ label {
   background-color: var(--background-screen);
   border-radius: 4px;
   margin-top: 16px;
-}
-
-#display .two {
-  background-color: #fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-weight: 700;
 }
 
 .keys {
@@ -164,6 +164,7 @@ label {
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+  box-shadow: 0px 2px var(--key-shadow-orange);
 }
 
 .operator {
@@ -180,10 +181,12 @@ label {
 
 .blue {
   background-color: var(--key-background);
+  box-shadow:0px 2px var(--key-shadow-blue);
 }
 
 .red {
   background-color: var(--key-toggle);
+  box-shadow: 0px 2px hsl(6, 70%, 34%)
 }
 
 .attribution {
