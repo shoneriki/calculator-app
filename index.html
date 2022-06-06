@@ -13,30 +13,29 @@
 <body>
   <div class="background" id="background">
     <main class="calculator">
-      <div class="top">
-        <div class="text-calc">
-          <p>calc</p>
+
+      <section class="top">
+        <div class="toggle-section">
+          <p class="text-calc">calc</p>
+          <p class="theme theme-text">Theme</p>
+          <p class="theme theme-1">1</p>
+          <p class="theme theme-2">2</p>
+          <p class="theme theme-3">3</p>
+          <div class="toggle-wrapper">
+            <div class="radio-section">
+              <input type='radio' checked class="toggle-option" name="toggle-option" id="theme-1" />
+              <input type='radio' checked class="toggle-option" name="toggle-option" id="theme-2" />
+              <input type='radio' checked class="toggle-option" name="toggle-option" id="theme-3" />
+              <label for="first">F</label>
+              <label for="second">S</label>
+              <label for="third">T</label>
+              <div class="slider">
+              </div>
+            </div>
+          </div>
         </div>
-        <form aria-labelledby="theme" class="theme">
-          <div class="theme-text">
-            <p>Theme</p>
-          </div>
-          <div class="theme-container">
-            <label>
-              <input type='radio' name='theme' id="theme-1" />
-              1
-            </label>
-            <label>
-              <input type='radio' name='theme' id="theme-2" />
-              2
-            </label>
-            <label>
-              <input type='radio' name='theme'id="theme-3" />
-              3
-            </label>
-          </div>
-        </form>
-      </div>
+      </section>
+
       <div class="screen">
         <!-- <input type="text" class="display" id="display" value="399,981"> -->
         <div class="previous-operand">399,981</div>
