@@ -140,9 +140,7 @@ label {
   border-radius: 4px;
   margin-top: 16px;
   color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
+  text-align: end;
   font-weight: 700;
 }
 
