@@ -10,6 +10,7 @@ theme1.addEventListener("click", function() {
   if ((theme1.checked)) {
     background.classList.remove("two");
     background.classList.remove("three")
+    console.log(background)
     background.classList.add("one");
   }
 })
@@ -17,12 +18,14 @@ theme1.addEventListener("click", function() {
 theme2.addEventListener("click", function() {
   if ((theme2.checked)) {
     background.classList.remove("one");
-    background.classList.remove("three")
+    background.classList.remove("three");
+    console.log(background)
     background.classList.add("two");
 
-    // display.classList.remove("one");
-    // display.classList.remove("three");
-    display.classList.add("two");
+    display.classList.remove("one");
+    display.classList.remove("three");
+    console.log(display)
+    display.classList.add("display-2");
 
   }
 })
