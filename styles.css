@@ -49,23 +49,23 @@
 
 
 .background[data-theme="three"] {
-  --bg: ;
-  --top-text:;
-  --toggle-bg:;
+  --bg: hsl(268, 75%, 9%);
+  --top-text: hsl(52, 100%, 62%);
+  --toggle-bg:hsl(268, 71%, 12%);
   --toggle-color:;
-  --screen-bg:;
-  --screen-text:;
-  --keypad-bg:;
-  --key-general-color:;
-  --key-general-bg:;
-  --key-general-shadow:;
-  --delReset-color:;
-  --delReset-bg:;
-  --delReset-shadow:;
+  --screen-bg: hsl(268, 71%, 12%);
+  --screen-text:hsl(52, 100%, 62%);
+  --keypad-bg:hsl(268, 71%, 12%);
+  --key-general-color: hsl(52, 100%, 62%);
+  --key-general-bg:hsl(281, 89%, 26%);
+  --key-general-shadow:hsl(290, 70%, 36%);
+  --delReset-color: white;
+  --delReset-bg: hsl(281, 89%, 26%);
+  --delReset-shadow:hsl(285, 91%, 52%);
 
-  --equals-color:;
-  --equals-bg:;
-  --equals-shadow:;
+  --equals-color:hsl(198, 20%, 13%);
+  --equals-bg:hsl(176, 100%, 44%);
+  --equals-shadow: hsl(177, 92%, 70%);
 
 
 }
