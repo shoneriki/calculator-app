@@ -118,61 +118,133 @@ body {
 }
 
 .background {
-  background-color: var(--t-bg);
   min-height: 100vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--font-family);
+  background-color: var(--t-bg);
+  color: white;
   position: relative;
-  font-family: "League Spartan", sans-serif;
 }
 
 .calculator {
-  margin: auto;
   width: 294px;
-  height: 430px;
+  /* height: 430px; */
   overflow: hidden;
 }
 
 .top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.text-calc {
-  display: flex;
   align-items: center;
 }
+.toggle-section {
+  display: grid;
+  /* grid-template-columns: 142px 80px 26px 26px 26px; */
+  grid-template-columns: 196px 48px 16px 16px 16px;
+  grid-template-rows: 8px 16px;
+  width: 100%;
+}
+
+.text-calc {
+}
 .theme {
-  border: none;
+  /* border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 6px;
   text-transform: uppercase;
-  letter-spacing: .05rem;
+  letter-spacing: .05rem; */
+  font-size: .5rem;
+  color: var(--t-text-top);
+  letter-spacing: 1px;
 }
-.theme-text p {
-  font-size: 6px;
-  padding-right: 8px;
-  padding-top: 4px;
+.text-theme {
+  font-size: .5rem;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 6px;
+  margin-right: .5rem;
+  letter-spacing: 1px;
 }
-.theme-container {
-  display: flex;
-  padding-bottom: .4rem;
-  width: 100%;
+
+.theme-1 {
+  grid-column: 3/4;
+  text-align: center;
 }
-.theme-container > label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.theme-2 {
+  grid-column: 4/5;
+  text-align: center;
 }
-.theme-container > label {
-  display: flex;
-  flex-direction: column-reverse;
+
+.theme-3 {
+  grid-column: 5/-1;
+  text-align: center;
 }
-.theme-container > input {
-  background-color: var(--background-screen);
+
+/* toggle */
+.toggle-wrapper {
+  margin: 0;
+  grid-column: 3/-1;
+  grid-row:  2/ -1;
+}
+
+.radio-section {
+  position: relative;
+  background: var(--t-toggle-keypad-bg);
+  margin:0 auto;
+  overflow: hidden;
+  padding:0;
+  border-radius:48px;
+  height: 16px;
+  width: 48px;
+}
+
+.radio-section > * {
+  float: left;
+}
+
+.radio-section input[type="radio"] {
+  display: none;
+}
+
+.radio-section label {
+  z-index: 0;
+  display: none;
+  width: 8px;
+  height: 8px;
+  margin:4px 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+
+}
+
+.slider {
+  background:var(--t-key-equals-orange);
+  width: 20px;
+  position:absolute;
+  top: 4px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+
+#toggle-1 ~ .slider {
+  left: 4px;
+}
+
+#toggle-2 ~ .slider {
+  left: 28px;
+}
+
+#toggle-3 ~ .slider {
+  left: 54px;
 }
 
 /* display/screen */
