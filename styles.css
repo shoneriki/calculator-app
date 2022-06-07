@@ -11,6 +11,7 @@
   --bg: hsl(222, 26%, 31%);
   --top-text: white;
   --toggle-bg:hsl(223, 31%, 20%);
+  --toggle-color:;
   --screen-bg: hsl(224, 36%, 15%);
   --screen-text:white;
   --keypad-bg:hsl(223, 31%, 20%);
@@ -24,29 +25,26 @@
   --equals-color:white;
   --equals-bg:hsl(6, 63%, 50%);
   --equals-shadow:hsl(6, 70%, 34%);
-
-
 }
 
 .background[data-theme="two"] {
-  --bg: ;
-  --top-text:;
-  --toggle-bg:;
-  --screen-bg:;
+
+  --bg: hsl(0, 0%, 90%);
+  --top-text:hsl(60, 10%, 19%);
+  --toggle-bg:hsl(0, 5%, 81%);
+  --toggle-color:;
+  --screen-bg:hsl(0, 0%, 93%);
   --screen-text:;
-  --keypad-bg:;
+  --keypad-bg:hsl(0, 5%, 81%);
   --key-general-color:;
-  --key-general-bg:;
-  --key-general-shadow:;
-  --delReset-color:;
-  --delReset-bg:;
-  --delReset-shadow:;
-
-  --equals-color:;
-  --equals-bg:;
-  --equals-shadow:;
-
-
+  --key-general-bg:hsl(45, 7%, 89%);
+  --key-general-shadow:hsl(35, 11%, 61%);
+  --delReset-color: hsl(0, 0, 100%);
+  --delReset-bg:hsl(185, 42%, 37%);
+  --delReset-shadow:hsl(185, 58%, 25%);
+  --equals-color:white;
+  --equals-bg:hsl(25, 98%, 40%);
+  --equals-shadow:hsl(25, 99%, 27%);
 }
 
 
@@ -54,6 +52,7 @@
   --bg: ;
   --top-text:;
   --toggle-bg:;
+  --toggle-color:;
   --screen-bg:;
   --screen-text:;
   --keypad-bg:;
@@ -201,7 +200,7 @@ body {
   background-color: var(--delReset-bg);
   box-shadow:0px 2px var(--delReset-shadow);
 }
-.red {
+#equalsBtn {
   color: var(--equals-color);
   background-color: var(--equals-bg);
   box-shadow: 0px 2px var(--equals-shadow);
