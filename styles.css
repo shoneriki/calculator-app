@@ -142,22 +142,15 @@ body {
 }
 .toggle-section {
   display: grid;
-  /* grid-template-columns: 142px 80px 26px 26px 26px; */
-  grid-template-columns: 196px 48px 16px 16px 16px;
+  grid-template-columns: 168px 48px 16px 16px 16px;
   grid-template-rows: 8px 16px;
   width: 100%;
 }
 
 .text-calc {
+
 }
 .theme {
-  /* border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 6px;
-  text-transform: uppercase;
-  letter-spacing: .05rem; */
   font-size: .5rem;
   color: var(--t-text-top);
   letter-spacing: 1px;
@@ -217,12 +210,11 @@ body {
   display: none;
   width: 8px;
   height: 8px;
-  margin:4px 4px;
+  margin:2px 4px;
   border-radius: 50px;
   cursor: pointer;
   z-index: 1;
   text-align: center;
-
 }
 
 .slider {
@@ -235,15 +227,15 @@ body {
 }
 
 
-#toggle-1 ~ .slider {
+#toggle-1:checked ~ .slider {
   left: 4px;
 }
 
-#toggle-2 ~ .slider {
+#toggle-2:checked ~ .slider {
   left: 28px;
 }
 
-#toggle-3 ~ .slider {
+#toggle-3:checked ~ .slider {
   left: 54px;
 }
 
