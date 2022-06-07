@@ -8,108 +8,69 @@
 }
 
 .background[data-theme="one"] {
-  --t-bg: hsl(222, 26%, 31%);
-  --t-toggle-keypad-bg: hsl(223, 31%, 20%); ;
-  --t-screen-bg: hsl(224, 36%, 15%);
-  --t-delReset-key-bg: hsl(225, 21%, 49%);
-  --t-delReset-key-shadow: hsl(224, 28%, 35%);
+  --bg: hsl(222, 26%, 31%);
+  --top-text: white;
+  --toggle-bg:hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --screen-text:white;
+  --keypad-bg:hsl(223, 31%, 20%);
+  --key-general-color:hsl(224, 28%, 35%);
+  --key-general-bg:hsl(30, 25%, 89%);
+  --key-general-shadow:hsl(28, 16%, 65%);
+  --delReset-color: white;
+  --delReset-bg:hsl(225, 21%, 49%);
+  --delReset-shadow:hsl(224, 28%, 35%);
 
-  --t-key-equals-orange: hsl(6, 63%, 50%);
+  --equals-color:white;
+  --equals-bg:hsl(6, 63%, 50%);
+  --equals-shadow:hsl(6, 70%, 34%);
 
-  --t-key-equals-shadow: hsl(6, 70%, 34%);
 
-  --t-key-white-background: hsl(30, 25%, 89%);
-  --t-key-white-shadow: hsl(28, 16%, 65%);
+}
 
-  --t-text-blue: hsl(221, 14%, 31%);
-  --t-text-display: white;
-  --t-text-top: white;
+.background[data-theme="two"] {
+  --bg: ;
+  --top-text:;
+  --toggle-bg:;
+  --screen-bg:;
+  --screen-text:;
+  --keypad-bg:;
+  --key-general-color:;
+  --key-general-bg:;
+  --key-general-shadow:;
+  --delReset-color:;
+  --delReset-bg:;
+  --delReset-shadow:;
+
+  --equals-color:;
+  --equals-bg:;
+  --equals-shadow:;
+
+
 }
 
 
-.background[data-theme="two"]{
-  --t-bg: hsl(0, 0%, 90%);
-  --t-toggle-keypad-bg: hsl(0, 5%, 81%);
-  --t-screen-bg: hsl(0, 0%, 93%);
-  --t-delReset-key-bg: rgb(26, 161, 158);
-  --t-delReset-key-shadow:  hsl(35, 11%, 61%);
+.background[data-theme="three"] {
+  --bg: ;
+  --top-text:;
+  --toggle-bg:;
+  --screen-bg:;
+  --screen-text:;
+  --keypad-bg:;
+  --key-general-color:;
+  --key-general-bg:;
+  --key-general-shadow:;
+  --delReset-color:;
+  --delReset-bg:;
+  --delReset-shadow:;
 
-  --t-key-equals-orange:hsl(25, 98%, 40%);
+  --equals-color:;
+  --equals-bg:;
+  --equals-shadow:;
 
-  --t-key-equals-shadow: hsl(25, 99%, 27%);
 
-  --t-key-white-background: hsl(30, 25%, 89%);
-  --t-key-white-shadow: hsl(28, 16%, 65%);
-
-  --t-text-blue: hsl(60, 10%, 19%);
-  --t-text-display: hsl(60, 10%, 19%);
-  --t-text-top: hsl(60, 10%, 19%);
 }
 
-.background[data-theme="three"]{
-  --t-bg: hsl(268, 75%, 9%);
-  --t-toggle-keypad-bg: hsl(268, 71%, 12%);
-  --t-screen-bg: hsl(268, 71%, 12%);
-  --t-delReset-key-bg: hsl(268, 47%, 21%);
-  --t-delReset-key-shadow:hsl(290, 70%, 36%);
-
-  --t-key-equals-orange:hsl(176, 100%, 44%);
-
-  --t-key-equals-shadow: hsl(177, 92%, 70%);
-
-  --t-key-white-background: hsl(281, 89%, 26%);
-  --t-key-white-shadow: hsl(285, 91%, 52%);
-
-  --t-text-blue: hsl(52, 100%, 62%);
-  --t-text-display: hsl(52, 100%, 62%);
-  --t-text-top: white;
-}
-
-:root {
-
-  --font-family:'League Spartan', sans-serif;
-  /* theme 1 */
-
-  /* backgrounds */
-  --background-main: hsl(222, 26%, 31%);
-  --background-toggle-keypad: hsl(223, 31%, 20%);
-  --background-screen: hsl(224, 36%, 15%);
-  /* keys */
-  --key-background: hsl(225, 21%, 49%);
-  --key-shadow-blue:  hsl(224, 28%, 35%);
-  --key-toggle: hsl(6, 63%, 50%);
-  --key-shadow-red: hsl(6, 70%, 34%);
-  --key-background-orange: hsl(30, 25%, 89%);
-  --key-shadow-orange: hsl(28, 16%, 65%);
-  /* text */
-  --text-gray:hsl(221, 14%, 31%);
-  --text-white: hsl(0, 0, 100%);
-
-  /* theme 2 */
-  /* background */
-  --background-2-main:  hsl(0, 0%, 90%);
-  --background-2-toggle-keypad: hsl(0, 5%, 81%);
-  --background-2-screen:hsl(0, 0%, 93%);
-  /* keys */
-  --keys-2-background: hsl(185, 42%, 37%);
-  --keys-2-shadow: hsl(185, 58%, 25%);
-  --keys-2-background-toggle:  hsl(25, 98%, 40%);
-  --keys-2-shadow: hsl(25, 99%, 27%);
-  --keys-2-key-background: hsl(45, 7%, 89%);
-  --keys-2-key-shadow:  hsl(35, 11%, 61%);
-  /* text */
-  --text-2-gray:hsl(60, 10%, 19%);
-  --text-2-white:hsl(0, 0, 100%);
-
-  /* theme 3 */
-  /* background */
-  --background-3-main: hsl(268, 75%, 9%);
-  --background-3-else: hsl(268, 71%, 12%);
-  /* Text */
-  --text-yellow: hsl(52, 100%, 62%);
-  --text-dark-blue:hsl(198, 20%, 13%);
-  --text-white: hsl(0, 0, 100%);
-}
 
 /* default theme */
 
@@ -123,8 +84,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: var(--font-family);
-  background-color: var(--t-bg);
-  color: white;
+  background-color: var(--bg);
+  color: var(--text-top);
   position: relative;
 }
 
@@ -138,6 +99,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--top-text);
 }
 
 .top .text-calc {
@@ -180,21 +142,22 @@ body {
 }
 
 .radio-section {
-  background-color: var(--t-toggle-keypad-bg);
+  background-color: var(--toggle-bg);
   border-radius: 16px;
   padding:2px 0px;
 }
 
 
 /* display/screen */
+
 .screen {
   width: 100%;
   padding: 16px 8px;
   border: none;
-  background-color: var(--background-screen);
+  background-color: var(--screen-bg);
   border-radius: 4px;
   margin-top: 16px;
-  color: var(--text-white);
+  color: var(--screen-text);
   text-align: end;
   font-family: var(--font-family);
   font-size: 1.75rem;
@@ -206,7 +169,7 @@ body {
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
-  background-color: var(--background-screen);
+  background-color: var(--keypad-bg);
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0px;
@@ -217,10 +180,13 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  background-color: var(--key-general-bg);
+  color: var(--key-general-color);
   cursor: pointer;
   border: none;
-  box-shadow: 0px 2px var(--key-shadow-orange);
+  box-shadow: 0px 2px var(--key-general-shadow);
 }
+
 .operator {
   text-transform: lowercase;
 }
@@ -231,13 +197,16 @@ body {
   grid-column: span 2;
 }
 .blue {
-  background-color: var(--key-background);
-  box-shadow:0px 2px var(--key-shadow-blue);
+  color: white;
+  background-color: var(--delReset-bg);
+  box-shadow:0px 2px var(--delReset-shadow);
 }
 .red {
-  background-color: var(--key-toggle);
-  box-shadow: 0px 2px hsl(6, 70%, 34%)
+  color: var(--equals-color);
+  background-color: var(--equals-bg);
+  box-shadow: 0px 2px var(--equals-shadow);
 }
+
 
 /* footer */
 
