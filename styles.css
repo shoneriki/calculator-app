@@ -72,7 +72,7 @@
 
   /* backgrounds */
   --background-main: hsl(222, 26%, 31%);
-  --backgound-toggle-keypad: hsl(223, 31%, 20%);
+  --background-toggle-keypad: hsl(223, 31%, 20%);
   --background-screen: hsl(224, 36%, 15%);
   /* keys */
   --key-background: hsl(225, 21%, 49%);
@@ -135,14 +135,40 @@ body {
 }
 
 .top {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.top .text-calc {
+  font-size:1rem;
+}
+
+.toggle-section {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-section p {
+  font-size: .5rem;
+  letter-spacing: 1px;
+}
+
+.radio-section {
+  background-color: var(--t-toggle-keypad-bg);
+  border-radius: 16px;
+}
+.radio-section input {
+}
+
+
+
+
+
+/*
 .toggle-section {
   display: grid;
-  grid-template-columns: 168px 48px 16px 16px 16px;
+  grid-template-columns: 5fr 1.5fr .5fr .5fr .5fr;
   grid-template-rows: 8px 16px;
   width: 100%;
 }
@@ -180,7 +206,7 @@ body {
 }
 
 /* toggle */
-.toggle-wrapper {
+/* .toggle-wrapper {
   margin: 0;
   grid-column: 3/-1;
   grid-row:  2/ -1;
@@ -224,9 +250,9 @@ body {
   top: 4px;
   border-radius: 50%;
   transition: all 0.4s ease;
-}
+} */
 
-
+/*
 #toggle-1:checked ~ .slider {
   left: 4px;
 }
@@ -237,7 +263,7 @@ body {
 
 #toggle-3:checked ~ .slider {
   left: 54px;
-}
+}  */
 
 /* display/screen */
 .screen {
