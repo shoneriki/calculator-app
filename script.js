@@ -8,14 +8,22 @@ const display = document.getElementById("display");
 
 const keys = Array.from(document.querySelectorAll(".keys"));
 
+
+
 keys.map( key => {
   key.addEventListener("click", (e) => {
+    console.log(e);
     switch(e.target.innerText) {
       case 'RESET':
         display.innerText = '';
-        break
+        break;
       case 'DEL':
-        display.innerText = display.innerText.slice(0,-1);
+        if(display.innerText) {
+          display.innerText = display.innerText.slice(0,-1);
+        }
+        break;
+      case '=':
+        display.innerText
         break
       default:
         display.innerText += e.target.innerText;
