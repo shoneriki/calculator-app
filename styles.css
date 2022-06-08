@@ -112,7 +112,7 @@ body {
   display:flex;
   align-items: flex-end;
   padding-bottom: 4px;
-  padding-right: 4px;
+  padding-right: 8px;
   text-transform: uppercase;
 }
 
@@ -120,12 +120,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* border: 4px solid black; */
+  border: 4px solid black;
 }
 
-.toggle-section p {
-  letter-spacing: 1px;
-}
 
 .toggle-section-labels {
   display: flex;
@@ -139,13 +136,64 @@ body {
   padding-left: 4px;
 }
 
-.radio-section {
-  background-color: var(--toggle-bg);
-  border-radius: 16px;
-  padding:2px 0px;
-  color:var(--toggle-color);
+/* theme stuff */
+
+.toggle-wrapper {
 }
 
+.radio-section {
+  position: relative;
+  background: var(--toggle-bg); /*themeable*/
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0;
+  border-radius: 50px;
+  height: 16px;
+  width: 56px;
+}
+
+.radio-section > * {
+  float: left;
+}
+
+.radio-section input[type="radio"] {
+  display: none;
+}
+
+.radio-section label {
+  color: rgba(255, 255, 255, 0);
+  display: block;
+  width:16px;
+  height: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+  /* border: 1px solid white; */
+}
+
+.slider {
+  background: var(--toggle-color);
+  margin: 0;
+  padding:0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+#toggle-1:checked ~ .slider {
+  left:0px;
+}
+
+#toggle-2:checked ~ .slider {
+  left: 20px;
+}
+
+#toggle-3:checked ~ .slider {
+  left: 40px;
+}
 
 /* display/screen */
 
