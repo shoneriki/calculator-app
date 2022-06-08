@@ -213,7 +213,7 @@ label[for="toggle-3"]{
   color: var(--screen-text);
   text-align: end;
   font-family: var(--font-family);
-  font-size: 1.75rem;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -226,11 +226,11 @@ label[for="toggle-3"]{
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0px;
-  height: 284px;
+  height: 248px;
 }
 .key {
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--key-general-bg);
@@ -251,6 +251,7 @@ label[for="toggle-3"]{
 }
 .blue {
   color: white;
+  font-size: 16px;
   background-color: var(--delReset-bg);
   box-shadow:0px 2px var(--delReset-shadow);
 }
