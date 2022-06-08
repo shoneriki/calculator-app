@@ -44,23 +44,12 @@ const keys = Array.from(document.querySelectorAll(".keys"));
 //   }
 // });
 
-document.body.addEventListener("change", function(e) {
-  let target = e.target;
-  background = document.getElementById("background");
-
-  switch (target.id) {
-    case "toggle-1":
-      console.log("first");
-      background.setAttribute("data-theme", "one");
-
-      break;
-    case "toggle-2":
-      alert("second");
-      background.setAttribute("data-theme", "two")
-    break
-    case "toggle-3":
-      alert("third");
-      background.setAttribute("data-theme", "three")
-      break
-  }
+theme1.addEventListener("click", function() {
+  background.setAttribute("data-theme", "one")
 })
+theme2.addEventListener("click", function () {
+  background.setAttribute("data-theme", "two");
+});
+theme3.addEventListener("click", function () {
+  background.setAttribute("data-theme", "three");
+});
