@@ -57,7 +57,7 @@
   --screen-text:hsl(52, 100%, 62%);
   --keypad-bg:hsl(268, 71%, 12%);
   --key-general-color: hsl(52, 100%, 62%);
-  --key-general-bg:hsl(281, 89%, 26%);
+  --key-general-bg:hsl(268, 47%, 21%);
   --key-general-shadow:hsl(290, 70%, 36%);
   --delReset-color: white;
   --delReset-bg: hsl(281, 89%, 26%);
@@ -113,6 +113,7 @@ body {
   align-items: flex-end;
   padding-bottom: 4px;
   padding-right: 4px;
+  text-transform: uppercase;
 }
 
 .toggle-section{
@@ -188,7 +189,7 @@ body {
 .operator {
   text-transform: lowercase;
 }
-#delBtn {
+#deleteBtn {
   text-transform: uppercase;
 }
 .half {

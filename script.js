@@ -6,29 +6,21 @@ const theme3 = document.getElementById("toggle-3");
 
 const display = document.getElementById("display");
 
+let value = ["0"];
+
 const keys = Array.from(document.querySelectorAll(".keys"));
 
+document.body.addEventListener("click", (e) =>
+{
+  let target = e.target;
+  if (e.target.id) {
+    key = document.querySelector(`#${e.target.id}`).textContent;
+  }
 
+  switch(target.id) {
+    
+  }
 
-keys.map( key => {
-  key.addEventListener("click", (e) => {
-    console.log(e);
-    switch(e.target.innerText) {
-      case 'RESET':
-        display.innerText = '';
-        break;
-      case 'DEL':
-        if(display.innerText) {
-          display.innerText = display.innerText.slice(0,-1);
-        }
-        break;
-      case '=':
-        display.innerText
-        break
-      default:
-        display.innerText += e.target.innerText;
-    }
-  })
 })
 
 
