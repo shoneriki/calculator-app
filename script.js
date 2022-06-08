@@ -1,6 +1,3 @@
-class Calculator {
-
-}
 
 const background = document.getElementById("background");
 const theme1 = document.getElementById("toggle-1");
@@ -9,7 +6,24 @@ const theme3 = document.getElementById("toggle-3");
 
 const display = document.getElementById("display");
 
-const keys = document.querySelectorAll(".keys");
+const keys = Array.from(document.querySelectorAll(".keys"));
+
+keys.map( key => {
+  key.addEventListener("click", (e) => {
+    switch(e.target.innerText) {
+      case 'RESET':
+        display.innerText = '';
+        break
+      case 'DEL':
+        display.innerText = display.innerText.slice(0,-1);
+        break
+      default:
+        display.innerText += e.target.innerText;
+    }
+  })
+})
+
+
 
 theme1.addEventListener("click", function() {
   if ((theme1.checked)) {
@@ -28,13 +42,3 @@ theme3.addEventListener("click", function() {
     background.setAttribute("data-theme", "three");
   }
 })
-
-function value() {
-  keys.forEach(key =>{
-    key.addEventListener("click", function() {
-      alert("clicked");
-    })
-  })
-}
-
-value();
