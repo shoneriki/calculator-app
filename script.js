@@ -94,12 +94,17 @@ decBtn.addEventListener("click", function() {
 })
 
 function equals() {
-  let result = eval(numArray[0] + operator + numArray[1]);
-  operator = '';
-  numArray[1] = '';
-  numArray[0] = result;
-  i = 0;
-  updateDisplay();
-  numArray[0] = '';
+  if (numArray[i] ===''){
+    display.innerText = '0';
+  } else {
+    let result = eval(numArray[0] + operator + numArray[1]);
+    operator = '';
+    numArray[1] = '';
+    numArray[0] = result;
+    i = 0;
+    updateDisplay();
+    numArray[0] = '';
+  }
+
 }
 equalsBtn.addEventListener("click", equals)
