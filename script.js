@@ -62,7 +62,7 @@ numBtns.forEach(numBtn => {
 
 function backspace() {
   if(numArray[i].length > 0) {
-    numArray[i] = numArray[i].substr(0,numArray[i].length-1);
+    numArray[i] = numArray[i].slice(0,numArray[i].length-1);
     updateDisplay();
   }
 }
