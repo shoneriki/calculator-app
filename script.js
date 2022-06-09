@@ -23,7 +23,7 @@ const numBtns = document.querySelectorAll(".digits");
 
 const addBtn = document.getElementById("addBtn")
 
-// global
+// Global
 
 //numbers to be  stored in memory
 let numArray = ['',''];
@@ -34,23 +34,22 @@ let index = 0;
 
 display.innerText = '0';
 
+function updateDisplay() {
+  if (numArray[index] === "") {
+    display.innerText = "0";
+  } else {
+    display.innerText = numArray[index];
+  }
+}
+
 function reset() {
   numArray = ['',''];
   operator = '';
   index = 0;
   updateDisplay();
 }
+resetBtn.addEventListener("click", reset);
 
-
-function updateDisplay() {
-  if(numArray[index] === '') {
-    display.innerText = '0';
-  } else {
-    display.innerText = numArray[index];
-  }
-}
-
-resetBtn.addEventListener('click', reset);
 numBtns.forEach(numBtn => {
   numBtn.addEventListener("click", () => {
     console.log("button clicked")
@@ -61,6 +60,14 @@ numBtns.forEach(numBtn => {
       updateDisplay();
   })
 })
+
+function del() {
+  if(numArray[index].length > 0) {
+    numArray[index] = numArray[index].substr(0,numArray[index].length-1);
+    updateDisplay();
+  }
+}
+deleteBtn.addEventListener("click", del)
 
 
 // numBtns.forEach(numBtn => {
