@@ -30,44 +30,43 @@ let numArray = ['',''];
 //operator + - * /
 let operator = '';
 //index to be used for numArray
-let index = 0;
+let i = 0;
 
 display.innerText = '0';
 
 function updateDisplay() {
-  if (numArray[index] === "") {
+  if (numArray[i] === "") {
     display.innerText = "0";
   } else {
-    display.innerText = numArray[index];
+    display.innerText = numArray[i];
   }
 }
 
 function reset() {
   numArray = ['',''];
   operator = '';
-  index = 0;
+  i = 0;
   updateDisplay();
 }
 resetBtn.addEventListener("click", reset);
 
 numBtns.forEach(numBtn => {
   numBtn.addEventListener("click", () => {
-    console.log("button clicked")
     // const regex = /^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$/;
     // if (regex.test(numArray[id]+numBtn.innerText)) {
     // }
-      numArray[index] += numBtn.innerText;
+      numArray[i] += numBtn.innerText;
       updateDisplay();
   })
 })
 
-function del() {
-  if(numArray[index].length > 0) {
-    numArray[index] = numArray[index].substr(0,numArray[index].length-1);
+function backspace() {
+  if(numArray[i].length > 0) {
+    numArray[i] = numArray[i].substr(0,numArray[i].length-1);
     updateDisplay();
   }
 }
-deleteBtn.addEventListener("click", del)
+deleteBtn.addEventListener("click", backspace)
 
 
 // numBtns.forEach(numBtn => {
