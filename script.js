@@ -7,7 +7,7 @@ const resetBtn = document.getElementById("resetBtn");
 const equalsBtn = document.getElementById("equalsBtn");
 const deleteBtn = document.getElementById("deleteBtn");
 
-display.textContent =  0;
+display.textContent =  '0';
 
 
 theme1.addEventListener("click", function() {
