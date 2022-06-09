@@ -34,7 +34,7 @@
   --toggle-bg:hsl(0, 5%, 81%);
   --toggle-color:hsl(25, 98%, 40%);
   --screen-bg:hsl(0, 0%, 93%);
-  --screen-text:;
+  --screen-text:hsl(60, 10%, 19%);
   --keypad-bg:hsl(0, 5%, 81%);
   --key-general-color:;
   --key-general-bg:hsl(45, 7%, 89%);
@@ -216,6 +216,8 @@ label[for="toggle-3"]{
   font-size: 32px;
   font-weight: 700;
 }
+
+
 
 /* keys */
 .keys {

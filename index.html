@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Calculator app</title>
   <script src="script.js" defer></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <div class="background" data-theme="one" id="background">
@@ -36,37 +35,37 @@
               <label for="toggle-1">F</label>
               <label for="toggle-2">S</label>
               <label for="toggle-3">T</label>
-              <div class="slider">
+              <div class="slider"></div>
             </div>
           </div>
         </div>
       </div>
       </section>
 
-      <div class="screen">
-        <div type="text" class="display" id="display"></div>
-      </div>
+
+      <div class="screen" id="display">0</div>
+
 
       <div class="keys">
-        <button data-number id="7" value="7" class="key digits">7</button>
-        <button data-number id="8" value="8" class="key digits">8</button>
-        <button data-number id="9" value="9" class="key digits">9</button>
-        <button data-delete id="deleteBtn" value="DEL" class="key operator blue">del</button>
-        <button data-number id="4" value="4" class="key digits">4</button>
-        <button data-number id="5" value="5" class="key digits">5</button>
-        <button data-number id="6" value="6" class="key digits">6</button>
-        <button data-operation id="addBtn" value="+" class="key operator">+</button>
-        <button data-number id="1" value="1" class="key digits">1</button>
-        <button data-number id="2" value="2" class="key digits">2</button>
-        <button data-number id="3"value="3" class="key digits">3</button>
-        <button data-operation id="subtractBtn" value="-"class="key operator">-</button>
-        <button data-number id="dot" value="." id="dot" class="key ">.</button>
-        <button data-number id="0" value="0" class="key digits">0</button>
-        <button data-operation id="divideBtn" value="/" class="key operator">/</button>
-        <button data-operation id="multiplyBtn" value="x" class="key operator">x</button>
+        <button id="7" class="key digits">7</button>
+        <button id="8" class="key digits">8</button>
+        <button id="9" class="key digits">9</button>
+        <button id="deleteBtn" class="key blue">del</button>
+        <button id="4" class="key digits">4</button>
+        <button id="5" class="key digits">5</button>
+        <button id="6" class="key digits">6</button>
+        <button id="addBtn" class="key operator">+</button>
+        <button id="1" class="key digits">1</button>
+        <button id="2" class="key digits">2</button>
+        <button id="3"class="key digits">3</button>
+        <button id="subtractBtn"class="key operator">-</button>
+        <button id="dot" id="dot" class="key dot">.</button>
+        <button id="0" class="key digits">0</button>
+        <button id="divideBtn" class="key operator">/</button>
+        <button id="multiplyBtn" class="key operator">x</button>
 
-        <button data-all-clear value="reset" id="resetBtn" class="key half blue reset">reset</button>
-        <button data-equals value="=" id="equalsBtn" class="key half red equals">=</button>
+        <button id="resetBtn" class="key half blue reset">reset</button>
+        <button id="equalsBtn" class="key half red equals">=</button>
       </div>
     </main>
     <div class="attribution">
