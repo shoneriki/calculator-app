@@ -20,8 +20,7 @@ theme3.addEventListener("click", function () {
 });
 
 const numBtns = document.querySelectorAll(".digits");
-
-const addBtn = document.getElementById("addBtn")
+const operBtns = document.querySelectorAll(".operator")
 
 // Global
 
@@ -43,7 +42,7 @@ function updateDisplay() {
 }
 
 function reset() {
-  numArray = ['',''];
+  numArray = [];
   operator = '';
   i = 0;
   updateDisplay();
@@ -67,6 +66,28 @@ function backspace() {
   }
 }
 deleteBtn.addEventListener("click", backspace)
+
+operBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    if(numArray[0] === '' && display.innerText !=='0') {
+      numArray[0] = display.innerText;
+    }
+
+    i++;
+
+    switch (btn.innerText) {
+      case "+":
+      case "-":
+      case "/":
+        operator = btn.innerText;
+        break
+      case "x":
+        operator = "*";
+    }
+
+    console.log('numArray: ', numArray, 'i:', i, 'operator: ', operator)
+  })
+})
 
 
 // numBtns.forEach(numBtn => {
