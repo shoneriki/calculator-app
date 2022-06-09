@@ -6,9 +6,7 @@ const theme3 = document.getElementById("toggle-3");
 const resetBtn = document.getElementById("resetBtn");
 const equalsBtn = document.getElementById("equalsBtn");
 const deleteBtn = document.getElementById("deleteBtn");
-
-
-
+const decBtn = document.getElementById("dot");
 
 theme1.addEventListener("click", function() {
   background.setAttribute("data-theme", "one")
@@ -43,7 +41,7 @@ function updateDisplay() {
 }
 
 function reset() {
-  numArray = [];
+  numArray = ['',''];
   operator = '';
   i = 0;
   updateDisplay();
@@ -90,7 +88,11 @@ operBtns.forEach(btn => {
   })
 })
 
-
+decBtn.addEventListener("click", function() {
+  if (!numArray[i].includes(".")) {
+    numArray[i] += decBtn.innerText;
+  }
+})
 
 function equals() {
   let result = eval(numArray[0] + operator + numArray[1]);
@@ -102,23 +104,3 @@ function equals() {
   numArray[0] = '';
 }
 equalsBtn.addEventListener("click", equals)
-
-
-// numBtns.forEach(numBtn => {
-//   numBtn.addEventListener("click", () => {
-//     if(display.textContent == 0) {
-//       display.textContent =  "";
-//     }
-//     let value =  parseInt(num.textContent);
-//     display.textContent += value;
-//   })
-// })
-// resetBtn.addEventListener("click", () => {
-//   display.textContent = 0;
-// })
-// deleteBtn.addEventListener("click", () => {
-
-//   let value =  display.textContent.slice(0,-1);
-//   if (value === "") {value = 0};
-//   display.textContent = value;
-// })
