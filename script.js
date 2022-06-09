@@ -7,6 +7,17 @@ const resetBtn = document.getElementById("resetBtn");
 const equalsBtn = document.getElementById("equalsBtn");
 const deleteBtn = document.getElementById("deleteBtn");
 const decBtn = document.getElementById("dot");
+const numBtns = document.querySelectorAll(".digits");
+const operBtns = document.querySelectorAll(".operator");
+
+// Global
+
+//numbers to be  stored in memory
+let numArray = ['',''];
+//operator + - * /
+let operator = '';
+//index to be used for numArray
+let i = 0;
 
 theme1.addEventListener("click", function() {
   background.setAttribute("data-theme", "one")
@@ -17,18 +28,6 @@ theme2.addEventListener("click", function () {
 theme3.addEventListener("click", function () {
   background.setAttribute("data-theme", "three");
 });
-
-const numBtns = document.querySelectorAll(".digits");
-const operBtns = document.querySelectorAll(".operator")
-
-// Global
-
-//numbers to be  stored in memory
-let numArray = ['',''];
-//operator + - * /
-let operator = '';
-//index to be used for numArray
-let i = 0;
 
 display.innerText = '0';
 
