@@ -32,7 +32,7 @@ let operator = '';
 //index to be used for numArray
 let index = 0;
 
-display.innerText = '399,981';
+display.innerText = '0';
 
 function reset() {
   numArray = ['',''];
@@ -53,12 +53,12 @@ function updateDisplay() {
 resetBtn.addEventListener('click', reset);
 numBtns.forEach(numBtn => {
   numBtn.addEventListener("click", () => {
-    const regex = /^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$/;
-
-    if (regex(numArray[index] + numBtn.innerText)) {
-      numArray[i] += numBtn.innerText;
+    console.log("button clicked")
+    // const regex = /^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$/;
+    // if (regex.test(numArray[id]+numBtn.innerText)) {
+    // }
+      numArray[index] += numBtn.innerText;
       updateDisplay();
-    }
   })
 })
 
