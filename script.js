@@ -1,5 +1,3 @@
-let value = ["0"];
-
 const background = document.getElementById("background");
 const theme1 = document.getElementById("toggle-1");
 const theme2 = document.getElementById("toggle-2");
@@ -7,7 +5,7 @@ const theme3 = document.getElementById("toggle-3");
 
 const display = document.getElementById("display");
 
-const keys = Array.from(document.querySelectorAll(".keys"));
+const keys = document.querySelectorAll(".keys");
 
 // document.body.addEventListener("click", (e) => {
 //   let target = e.target;
@@ -54,3 +52,23 @@ theme3.addEventListener("click", function () {
   background.setAttribute("data-theme", "three");
 });
 
+const calc = {
+  displayValue: '0',
+  firstInput: null,
+  waitForInput: false,
+  operator: null,
+}
+
+function updateDisplay(){
+  const display =  document.querySelector(".display");
+  display.textContent = calc.displayValue;
+}
+
+updateDisplay();
+
+
+keys.forEach((key) => {
+  key.addEventListener("click", function() {
+    console.log(key.textContent);
+  })
+})
