@@ -9,6 +9,7 @@ const deleteBtn = document.getElementById("deleteBtn");
 
 
 
+
 theme1.addEventListener("click", function() {
   background.setAttribute("data-theme", "one")
 })
@@ -88,6 +89,19 @@ operBtns.forEach(btn => {
     console.log('numArray: ', numArray, 'i:', i, 'operator: ', operator)
   })
 })
+
+
+
+function equals() {
+  let result = eval(numArray[0] + operator + numArray[1]);
+  operator = '';
+  numArray[1] = '';
+  numArray[0] = result;
+  i = 0;
+  updateDisplay();
+  numArray[0] = '';
+}
+equalsBtn.addEventListener("click", equals)
 
 
 // numBtns.forEach(numBtn => {
