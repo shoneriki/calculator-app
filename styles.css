@@ -266,8 +266,10 @@ label[for="toggle-3"]{
   font-size: 11px; text-align: center;
   position: absolute;
   bottom:0px;
+  color: var(--screen-text);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--equals-bg);
+  text-decoration: none;
 }
