@@ -297,3 +297,19 @@ label[for="toggle-3"]{
   color: var(--equals-bg);
   text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+
+  .title-theme{
+  display:flex;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  padding-right: 32px;
+  text-transform: uppercase;
+  line-spacing:;
+  }
+
+  .keys {
+    height: 408px;
+  }
+}
