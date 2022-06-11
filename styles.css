@@ -43,11 +43,11 @@
   --keypad-bg:hsl(0, 5%, 81%);
   --key-general-bg:hsl(45, 7%, 89%);
   --key-general-shadow:hsl(35, 11%, 61%);
-  --key-general-active: ;
+  --key-general-active: white;
   --delReset-color: hsl(0, 0, 100%);
   --delReset-bg:hsl(185, 42%, 37%);
   --delReset-shadow:hsl(185, 58%, 25%);
-  --delReset-active:;
+  --delReset-active:hsl(25, 100%, 60%);
   --equals-color:white;
   --equals-bg:hsl(25, 98%, 40%);
   --equals-shadow:hsl(25, 99%, 27%);
@@ -60,7 +60,7 @@
   --top-text: hsl(52, 100%, 62%);
   --toggle-bg:hsl(268, 71%, 12%);
   --toggle-color:hsl(176, 100%, 44%);
-  --toggle-hover:hsl(178, 98%, 79%);
+  --toggle-hover:hsl(176, 96%, 78%);
   --screen-bg: hsl(268, 71%, 12%);
   --screen-text:hsl(52, 100%, 62%);
   --keypad-bg:hsl(268, 71%, 12%);
