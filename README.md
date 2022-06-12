@@ -69,33 +69,21 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-I learned a lot when doing this project. Particularly with learning about how to switch themes as well as figuring out the function of the calculator.
+I learned a lot when doing this project.
 
+HTML/CSS
 
+1. When starting out with this project I was not sure how to handle the different themes (with the different color schemes for each theme). Luckily, I was fortunate to learn that I can set a data-theme attribute for the app (I set it on the background), set the value to be corresponding to the different themes (one, two, three for the first, second, third themes respectively).
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+2. One of the main challenges I struggled with was the theme slider at the top-right portion of the page. I was not aware that you can use labels to create a slider. Chiefly, to hide the labels themselves, but set them positioned absolutely to create the "stops" for the slider.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+3. Relating to the above, I was aware of being able to use variables in CSS. However, I was not aware that you can set the variables to be different depending on the theme (i.e. var(--bg) for the background color for each theme). This is a game-changer for me since that means that in the future if I wanted to set the background color for a feature to be different for a different theme/page, I can just change the value of the variable for each instance. Which means I wouldn't have to define new css properties for each theme body, for example.
+
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
