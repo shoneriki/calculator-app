@@ -47,16 +47,6 @@ function reset() {
 }
 resetBtn.addEventListener("click", reset);
 
-numBtns.forEach(numBtn => {
-  numBtn.addEventListener("click", () => {
-    // const regex = /^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$/;
-    // if (regex.test(numArray[id]+numBtn.innerText)) {
-    // }
-      numArray[i] += numBtn.innerText;
-      updateDisplay();
-  })
-})
-
 function backspace() {
   if(numArray[i].length > 0) {
     numArray[i] = numArray[i].slice(0,numArray[i].length-1);
@@ -64,6 +54,13 @@ function backspace() {
   }
 }
 deleteBtn.addEventListener("click", backspace)
+
+numBtns.forEach(numBtn => {
+  numBtn.addEventListener("click", () => {
+      numArray[i] += numBtn.innerText;
+      updateDisplay();
+  })
+})
 
 operBtns.forEach(btn => {
   btn.addEventListener("click", () => {

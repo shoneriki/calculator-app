@@ -42,15 +42,7 @@ This calculator:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+[images/Calculator-App-Screenshot.png](./screenshot.jpg)
 
 ### Links
 
@@ -69,28 +61,47 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-I learned a lot when doing this project.
-
 HTML/CSS
 
-1. When starting out with this project I was not sure how to handle the different themes (with the different color schemes for each theme). Luckily, I was fortunate to learn that I can set a data-theme attribute for the app (I set it on the background), set the value to be corresponding to the different themes (one, two, three for the first, second, third themes respectively).
+1. When starting out with this project I was not sure about how to handle the different color themes. Luckily, I was fortunate to learn that I can set a data-theme attribute for the app (to set it on the background). I set the value to correspond with the different themes (one, two, three for the first, second, third themes respectively).
 
-2. One of the main challenges I struggled with was the theme slider at the top-right portion of the page. I was not aware that you can use labels to create a slider. Chiefly, to hide the labels themselves, but set them positioned absolutely to create the "stops" for the slider.
+2. Relating to the above, I was not aware that you can set the variables to be different depending on the theme (i.e. var(--bg) for the background color for each theme).This is a game-changer for me since that means that in the future if I wanted to set the background color for a feature to be different for a different theme/page, I can just change the value of the variable for each instance. Which means I wouldn't have to define new css properties for each theme body, for example.
 
-3. Relating to the above, I was aware of being able to use variables in CSS. However, I was not aware that you can set the variables to be different depending on the theme (i.e. var(--bg) for the background color for each theme).This is a game-changer for me since that means that in the future if I wanted to set the background color for a feature to be different for a different theme/page, I can just change the value of the variable for each instance. Which means I wouldn't have to define new css properties for each theme body, for example.
+3. One of the main challenges I struggled with was the theme slider at the top-right portion of the page. I was not aware that you can use labels to create a slider. Namely, to hide the labels themselves, but to set the lables to be positioned absolutely to create the "stops" for the slider.
 
+JavaScript
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I resolved that I would go with the approach of starting with three variables.
+
+1. An empty array(numArray) to store two values that would eventually be used to calculate a value.
+
+2. An operator variable to store the relevant operator (+,-,*,/ for addition, subtraction, multiplication or division).
+
+3. An index for the numArray.
+
+Then creating a simple update display method to make sure that an empty value ("") would always display "0" (as a string), and otherwise display the current number or numArray[i].
+
+Then it was a process of:
+
+1. Having a reset button to set the variables to their default empty values and to use the updateDisplay method to set the value back to zero.
+
+2. Using backspace function using the slice method to delete the value (as we are still dealing with numbers that are actually strings).
+
+3. Adding the event listeners for the number buttons in order to add the button's innerText to the numArray[i] value (make sure to first make the value empty when entering any number other than zero so you don't get "09" for example, then add the number into the display).
+
+4. Adding event listeners to the operator buttons to store the button's innerText as the operator value and then to increment the index i of the numArray by one (numArray[0] to numArray[1]) so you can enter another number into the numArray.
+
+5. Creating the equals function. First making sure that if the value is "", to make sure it's "0" so it doesn't display undefined. Then, I was pleasantly surprised that there was an eval() function property so I didn't have to use parseInt on the numbers to evaluate the value.
 
 ### Continued development
 
 I would like to:
 
-1. Get faster in positioning HTML elements with CSS.
+1. Get faster in positioning HTML elements with CSS. This still takes more time than I would wish.
 
 2. Be able to cut down on refactoring code in the CSS (I seem to have trouble in selecting individual HTML elements in an efficient manner).
 
-3. Get better with prototyping the different steps in CSS and JavaScript to plan out my future projects and to save time.
+3. Get better with prototyping the different steps in CSS and JavaScript to plan out my future projects and to save time in the long-run.
 
 ### Useful resources
 
@@ -99,12 +110,3 @@ I would like to:
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
