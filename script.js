@@ -29,7 +29,7 @@ theme3.addEventListener("click", function () {
   background.setAttribute("data-theme", "three");
 });
 
-display.innerText = '0';
+display.innerText = '399,981';
 
 function updateDisplay() {
   if (numArray[i] === "") {
