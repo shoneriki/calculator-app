@@ -38,7 +38,7 @@ This calculator:
 
 ### Screenshot
 
-[images/Calculator-App-Screenshot.png](./screenshot.jpg)
+[images/screenshot.jpg](./screenshot.jpg)
 
 ### Links
 
