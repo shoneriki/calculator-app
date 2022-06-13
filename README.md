@@ -83,9 +83,12 @@ Then it was a process of:
 
 2. Using backspace function (on the delete button) using the slice method to delete each "digit" of the value (as we are still dealing with numbers that are actually strings). Learned that I cannot name the function delete() as it is a reserved word
 
-3. Adding the event listeners for the number buttons in order to add the button's innerText to the numArray[i] value (make sure to first make the value empty when entering any number other than zero so you don't get "09" for example, then add the number into the display).
+3. Adding the event listeners for the number buttons in order to add the button's inner
+to the numArray[i] value (make sure to first make the value empty when entering any number other than zero so you don't get "09" for example, then add the number into the display).
 
-4. Adding event listeners to the operator buttons. Made sure to store the button's innerText as the operator value and then increment the index (i) of the numArray (numArray[0] to numArray[1]) so you can enter another number into the numArray. Made sure that even though the innerText of the multiplication button is "x", that the operator was to become "*" instead.
+4. Adding event listeners to the operator buttons. Made sure to store the button's inner
+as the operator value and then increment the index (i) of the numArray (numArray[0] to numArray[1]) so you can enter another number into the numArray. Made sure that even though the inner
+of the multiplication button is "x", that the operator was to become "*" instead.
 
 5. Creating the equals function for the equals button. Made sure that if the value is "", the display should read "0" so it doesn't display undefined. I was pleasantly surprised that there was an eval() function property so I didn't have to use parseInt on the numbers to evaluate the value. In order to keep this calculator going, I had to reset the values of the operator and numArray[1] as "", make numArray[0] = result, update the display to be numArray[i]/numArray[0]/result.
 
@@ -106,3 +109,14 @@ I would like to:
 - Website - [Sho Neriki](https://www.shoneriki.com)
 - Frontend Mentor - [@shoneriki](https://www.frontendmentor.io/profile/shoneriki)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
+## Acknowledgements
+
+I have to acknowledge that I wouldn't have been able to complete this project without the help of many others.
+
+I would like to thank Grace Snow (a generous developer from the frontend mentor channel on slack) for letting me know about setting variables with differing values for the themes.
+
+I would also like to acknowledge that I wouldn't have been able to complete this challenge without looking at other codes. I used mipsmonsta's css (of the same challenge) for reference of the theme toggler (which was done entirely with css without any JavaScript).
+The second of which is sergii-moroz's JS for the same challenge. I would not have been able to complete the main functions of the calculator without seeing this code.
+
+I would also like to thank Dominic Ingraham (web designer) for helping me to understand and implement mipsmonsta's code for the theme toggler and helping me to get off to a good start with this challenge.

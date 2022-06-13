@@ -10,14 +10,6 @@ const decBtn = document.getElementById("dot");
 const numBtns = document.querySelectorAll(".digits");
 const operBtns = document.querySelectorAll(".operator");
 
-// Global
-
-//numbers to be  stored in memory
-let numArray = ['',''];
-//operator + - * /
-let operator = '';
-//index to be used for numArray
-let i = 0;
 
 theme1.addEventListener("click", function() {
   background.setAttribute("data-theme", "one")
@@ -29,8 +21,20 @@ theme3.addEventListener("click", function () {
   background.setAttribute("data-theme", "three");
 });
 
+// Global
+
+//numbers to be stored in memory
+let numArray = ['',''];
+//operator + - * /
+let operator = '';
+//index to be used for numArray
+let i = 0;
+
+// inital starting value
 display.innerText = '0';
 
+// if there is no value, make it still display 0
+// otherwise display whatever numArray[i] is
 function updateDisplay() {
   if (numArray[i] === "") {
     display.innerText = "0";
@@ -39,6 +43,9 @@ function updateDisplay() {
   }
 }
 
+// set numArray, operator and i to default values
+// and update the display to 0
+// set it to RESET button. Same as AC
 function reset() {
   numArray = ['',''];
   operator = '';
@@ -47,6 +54,8 @@ function reset() {
 }
 resetBtn.addEventListener("click", reset);
 
+// delete digits of "number" string with slice string method
+// set said function up for deleteBtn
 function backspace() {
   if(numArray[i].length > 0) {
     numArray[i] = numArray[i].slice(0,numArray[i].length-1);
@@ -55,6 +64,7 @@ function backspace() {
 }
 deleteBtn.addEventListener("click", backspace)
 
+// put number button's innerText into numArray[i] or display/screen
 numBtns.forEach(numBtn => {
   numBtn.addEventListener("click", () => {
       numArray[i] += numBtn.innerText;
@@ -62,14 +72,18 @@ numBtns.forEach(numBtn => {
   })
 })
 
+// if numArray[0] is not empty and not zero
+  // display should show numArray[0]
 operBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     if(numArray[0] === '' && display.innerText !=='0') {
       numArray[0] = display.innerText;
     }
-
+    // increment i
     i++;
 
+    // for each operator button, add it's innerText
+    // except for "X" as that innerText should be "*"
     switch (btn.innerText) {
       case "+":
       case "-":
@@ -84,12 +98,21 @@ operBtns.forEach(btn => {
   })
 })
 
+// if decimal doesn't exist already, add decimal button
+// add that to the decimal button
 decBtn.addEventListener("click", function() {
   if (!numArray[i].includes(".")) {
     numArray[i] += decBtn.innerText;
   }
 })
 
+// if there is an empty value when the equals button is pressed
+  // keep it at zero
+// otherwise, evaluate the value based on what was stored in numArray and the operator
+// set value to numArray[0]
+// and update everything else to default and update the display to reflect numArray[0]
+// updateDisplay should display numArray[0] or the value of the calculation
+// set equals function to equals button
 function equals() {
   if (numArray[i] ===''){
     display.innerText = '0';
