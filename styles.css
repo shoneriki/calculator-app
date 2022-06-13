@@ -108,6 +108,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
   color: var(--top-text);
 }
 
@@ -172,7 +173,6 @@ body {
   border-radius: 50px;
   cursor: pointer;
   z-index: 1;
-  border: 1px solid white;
 }
 
 
@@ -215,7 +215,7 @@ label[for="toggle-3"]{
 .screen {
   color: var(--screen-text);
   width: 100%;
-  padding: 40px 32px;
+  padding: 32px 32px;
   border: none;
   background-color: var(--screen-bg);
   border-radius: 8px;
@@ -234,11 +234,12 @@ label[for="toggle-3"]{
   background-color: var(--keypad-bg);
   border-radius: 8px;
   padding: 32px;
-  margin: 16px 0px;
+  margin: 24px 0px;
   height: 482px;
 }
 .key {
   border-radius: 8px;
+  font-family: var(--font-family);
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -282,9 +283,9 @@ label[for="toggle-3"]{
 /* footer */
 
 .attribution {
-  font-size: 16px; text-align: center;
+  font-size: 12px; text-align: center;
   position: absolute;
-  bottom: 8px;
+  bottom: 4px;
   color: var(--screen-text);
 }
 
@@ -295,15 +296,35 @@ label[for="toggle-3"]{
 
 @media screen and (max-width: 500px) {
 
+.calculator {
+  max-width: 332px;
+  height: 640px;
+  font-size: 32px;
+  overflow: hidden;
+}
+
+.keys {
+  grid-gap: 16px;
+  border-radius: 8px;
+  margin: 24px 0px;
+  padding: 24px;
+  height: 408px;
+}
+
   .title-theme{
-  display:flex;
-  align-items: flex-end;
-  padding-bottom: 2px;
+  padding-bottom: 20px;
   padding-right: 32px;
-  text-transform: uppercase;
   }
 
-  .keys {
-    height: 408px;
+  .toggle-section {
+    padding-bottom: 20px;
+  }
+
+  .blue {
+    font-size: 20px;
+  }
+
+  .red {
+    font-size: 16px;
   }
 }
