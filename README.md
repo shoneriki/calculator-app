@@ -24,11 +24,7 @@ This is my solution to the [Calculator app challenge on Frontend Mentor](https:/
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -46,7 +42,7 @@ This calculator:
 
 ### Links
 
-- Solution URL: [https://github.com/shoneriki/calculator-app]
+- Solution URL: [https://www.frontendmentor.io/solutions/calculator-app-WgNrrb-GnV]
 - Live Site URL: [https://shoneriki.github.io/calculator-app/]
 
 ## My process
@@ -85,13 +81,15 @@ Then it was a process of:
 
 1. Having a reset button to set the variables to their default empty values and to use the updateDisplay method to set the value back to zero.
 
-2. Using backspace function using the slice method to delete the value (as we are still dealing with numbers that are actually strings).
+2. Using backspace function (on the delete button) using the slice method to delete each "digit" of the value (as we are still dealing with numbers that are actually strings). Learned that I cannot name the function delete() as it is a reserved word
 
 3. Adding the event listeners for the number buttons in order to add the button's innerText to the numArray[i] value (make sure to first make the value empty when entering any number other than zero so you don't get "09" for example, then add the number into the display).
 
-4. Adding event listeners to the operator buttons to store the button's innerText as the operator value and then to increment the index i of the numArray by one (numArray[0] to numArray[1]) so you can enter another number into the numArray.
+4. Adding event listeners to the operator buttons. Made sure to store the button's innerText as the operator value and then increment the index (i) of the numArray (numArray[0] to numArray[1]) so you can enter another number into the numArray. Made sure that even though the innerText of the multiplication button is "x", that the operator was to become "*" instead.
 
-5. Creating the equals function. First making sure that if the value is "", to make sure it's "0" so it doesn't display undefined. Then, I was pleasantly surprised that there was an eval() function property so I didn't have to use parseInt on the numbers to evaluate the value.
+5. Creating the equals function for the equals button. Made sure that if the value is "", the display should read "0" so it doesn't display undefined. I was pleasantly surprised that there was an eval() function property so I didn't have to use parseInt on the numbers to evaluate the value. In order to keep this calculator going, I had to reset the values of the operator and numArray[1] as "", make numArray[0] = result, update the display to be numArray[i]/numArray[0]/result.
+
+6. Programmed the dot/decimal button (decBtn) to only insert the dot/decimal if there isn't one already.
 
 ### Continued development
 
@@ -103,10 +101,8 @@ I would like to:
 
 3. Get better with prototyping the different steps in CSS and JavaScript to plan out my future projects and to save time in the long-run.
 
-### Useful resources
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Sho Neriki](https://www.shoneriki.com)
+- Frontend Mentor - [@shoneriki](https://www.frontendmentor.io/profile/shoneriki)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
